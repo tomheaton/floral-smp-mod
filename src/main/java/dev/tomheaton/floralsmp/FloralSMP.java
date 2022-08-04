@@ -26,6 +26,8 @@ import org.slf4j.Logger;
 public class FloralSMP {
 
     public static final String MODID = "floralsmp";
+    public static final String MODNAME = "Floral SMP Mod";
+    public static final String VERSION = "${version}";
     private static final Logger LOGGER = LogUtils.getLogger();
 
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, MODID);
