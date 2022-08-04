@@ -2,7 +2,9 @@ package dev.tomheaton.floralsmp;
 
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.Minecraft;
+import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.level.block.Block;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -24,9 +26,14 @@ public class FloralSMP {
     public static final String VERSION = "${version}";
     private static final Logger LOGGER = LogUtils.getLogger();
 
+    public static final FloralItemGroup floralItemGroup = new FloralItemGroup();
+
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, MODID);
+    public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, MODID);
 
     public static final RegistryObject<Item> BASE_FLOWER_ITEM = ITEMS.register("base_flower", BaseFlowerItem::new);
+    public static final RegistryObject<Block> BASE_FLOWER_BLOCK = BLOCKS.register("base_flower_block", BaseFlowerBlock::new);
+    public static final RegistryObject<BlockItem> BASE_FLOWER_BLOCK_ITEM = ITEMS.register("base_flower_block", () -> new BlockItem(BASE_FLOWER_BLOCK.get(), new Item.Properties().tab(floralItemGroup)));
 
 //    public static final Block AZURE_BLUET = register("azure_bluet", new FlowerBlock(MobEffects.BLINDNESS, 8, BlockBehaviour.Properties.of(Material.PLANT).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ)));
 
