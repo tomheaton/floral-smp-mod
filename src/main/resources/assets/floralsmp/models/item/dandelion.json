@@ -2,6 +2,6 @@
   "parent": "minecraft:item/generated",
   "textures": {
     "_comment": "minecraft:block/dandelion",
-    "layer0": "floralsmp:block/base_flower"
+    "layer0": "floralsmp:block/dandelion"
   }
 }
