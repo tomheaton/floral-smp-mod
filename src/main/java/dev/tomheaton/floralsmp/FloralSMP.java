@@ -2,9 +2,6 @@ package dev.tomheaton.floralsmp;
 
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.Minecraft;
-import net.minecraft.world.item.BlockItem;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -13,9 +10,6 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.minecraftforge.registries.DeferredRegister;
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.registries.RegistryObject;
 import org.slf4j.Logger;
 
 @Mod(FloralSMP.MODID)
@@ -28,23 +22,13 @@ public class FloralSMP {
 
     public static final FloralItemGroup floralItemGroup = new FloralItemGroup();
 
-    public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, MODID);
-    public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, MODID);
-
-    public static final RegistryObject<Item> BASE_FLOWER_ITEM = ITEMS.register("base_flower", BaseFlowerItem::new);
-    public static final RegistryObject<Block> BASE_FLOWER_BLOCK = BLOCKS.register("base_flower_block", BaseFlowerBlock::new);
-    public static final RegistryObject<BlockItem> BASE_FLOWER_BLOCK_ITEM = ITEMS.register("base_flower_block", () -> new BlockItem(BASE_FLOWER_BLOCK.get(), new Item.Properties().tab(floralItemGroup)));
-
-//    public static final Block AZURE_BLUET = register("azure_bluet", new FlowerBlock(MobEffects.BLINDNESS, 8, BlockBehaviour.Properties.of(Material.PLANT).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ)));
-
     public FloralSMP() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
         modEventBus.addListener(this::commonSetup);
 
-        // Register the Deferred Register to the mod event bus so items get registered
-        ITEMS.register(modEventBus);
+        ItemInit.ITEMS.register(modEventBus);
+        BlockInit.BLOCKS.register(modEventBus);
 
-        // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
     }
 

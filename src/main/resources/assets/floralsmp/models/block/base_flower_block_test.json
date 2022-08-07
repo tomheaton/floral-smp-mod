@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "_comment": "minecraft:block/rose_bush_top",
+    "layer0": "floralsmp:block/base_flower_block"
+  }
+}
