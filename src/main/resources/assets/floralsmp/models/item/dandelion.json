@@ -1,7 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "_comment": "minecraft:block/dandelion",
     "layer0": "floralsmp:block/dandelion"
   }
 }

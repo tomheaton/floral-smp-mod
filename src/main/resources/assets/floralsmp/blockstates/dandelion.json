@@ -1,7 +1,6 @@
 {
   "variants": {
     "": {
-      "_comment": "minecraft:block/rose_bush_bottom",
       "model": "floralsmp:block/dandelion"
     }
   }
