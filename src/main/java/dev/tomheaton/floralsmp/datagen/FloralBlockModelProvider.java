@@ -2,12 +2,13 @@ package dev.tomheaton.floralsmp.datagen;
 
 import dev.tomheaton.floralsmp.FloralSMP;
 import net.minecraft.data.DataGenerator;
-import net.minecraftforge.client.model.generators.ItemModelBuilder;
-import net.minecraftforge.client.model.generators.ItemModelProvider;
+import net.minecraftforge.client.model.generators.BlockModelBuilder;
+import net.minecraftforge.client.model.generators.BlockModelProvider;
 import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.common.data.ExistingFileHelper;
 
-public class FloralBlockModelProvider extends ItemModelProvider {
+public class FloralBlockModelProvider extends BlockModelProvider {
+
 
     public FloralBlockModelProvider(DataGenerator generatorIn, ExistingFileHelper existingFileHelper) {
         super(generatorIn, FloralSMP.MODID, existingFileHelper);
@@ -17,32 +18,27 @@ public class FloralBlockModelProvider extends ItemModelProvider {
     protected void registerModels() {
         ModelFile itemGenerated = getExistingFile(mcLoc("item/generated"));
 
-        blockBuilder(itemGenerated, "dandelion");
-        blockBuilder(itemGenerated, "dandelion");
-        blockBuilder(itemGenerated, "poppy");
-        blockBuilder(itemGenerated, "blue_orchid");
-        blockBuilder(itemGenerated, "allium");
-        blockBuilder(itemGenerated, "azure_bluet");
-        blockBuilder(itemGenerated, "red_tulip");
-        blockBuilder(itemGenerated, "orange_tulip");
-        blockBuilder(itemGenerated, "white_tulip");
-        blockBuilder(itemGenerated, "pink_tulip");
-        blockBuilder(itemGenerated, "oxeye_daisy");
-        blockBuilder(itemGenerated, "cornflower");
-        blockBuilder(itemGenerated, "lily_of_the_valley");
-        blockBuilder(itemGenerated, "wither_rose");
-        blockBuilder(itemGenerated, "sunflower");
-        blockBuilder(itemGenerated, "lilac");
-        blockBuilder(itemGenerated, "rose_bush");
-        blockBuilder(itemGenerated, "peony");
+        builder(itemGenerated, "dandelion");
+        builder(itemGenerated, "dandelion");
+        builder(itemGenerated, "poppy");
+        builder(itemGenerated, "blue_orchid");
+        builder(itemGenerated, "allium");
+        builder(itemGenerated, "azure_bluet");
+        builder(itemGenerated, "red_tulip");
+        builder(itemGenerated, "orange_tulip");
+        builder(itemGenerated, "white_tulip");
+        builder(itemGenerated, "pink_tulip");
+        builder(itemGenerated, "oxeye_daisy");
+        builder(itemGenerated, "cornflower");
+        builder(itemGenerated, "lily_of_the_valley");
+        builder(itemGenerated, "wither_rose");
+        builder(itemGenerated, "sunflower");
+        builder(itemGenerated, "lilac");
+        builder(itemGenerated, "rose_bush");
+        builder(itemGenerated, "peony");
     }
 
-    private ItemModelBuilder itemBuilder(ModelFile itemGenerated, String name) {
-        return getBuilder(name).parent(itemGenerated).texture("layer0", "item/" + name);
-    }
-
-    // TODO: move this to block data gen?
-    private ItemModelBuilder blockBuilder(ModelFile itemGenerated, String name) {
+    private BlockModelBuilder builder(ModelFile itemGenerated, String name) {
         return getBuilder(name).parent(itemGenerated).texture("layer0", "block/" + name);
     }
 }

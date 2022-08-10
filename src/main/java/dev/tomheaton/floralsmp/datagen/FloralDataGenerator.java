@@ -20,5 +20,6 @@ public final class FloralDataGenerator {
 
         // TODO: test the boolean
         gen.addProvider(true, new FloralItemModelProvider(gen, existingFileHelper));
+        gen.addProvider(true, new FloralBlockModelProvider(gen, existingFileHelper));
     }
 }
