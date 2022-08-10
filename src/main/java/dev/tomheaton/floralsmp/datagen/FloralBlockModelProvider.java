@@ -7,9 +7,9 @@ import net.minecraftforge.client.model.generators.ItemModelProvider;
 import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.common.data.ExistingFileHelper;
 
-public class FloralItemModelProvider extends ItemModelProvider {
+public class FloralBlockModelProvider extends ItemModelProvider {
 
-    public FloralItemModelProvider(DataGenerator generatorIn, ExistingFileHelper existingFileHelper) {
+    public FloralBlockModelProvider(DataGenerator generatorIn, ExistingFileHelper existingFileHelper) {
         super(generatorIn, FloralSMP.MODID, existingFileHelper);
     }
 
