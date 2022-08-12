@@ -2,6 +2,7 @@
 package dev.tomheaton.floralsmp;
 
 import net.minecraft.world.item.Item;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
@@ -55,4 +56,7 @@ public class ItemInit {
             () -> new FloralBlockItem(BlockInit.ROSE_BUSH.get()));
     public static final RegistryObject<FloralBlockItem> PEONY = ITEMS.register("peony",
             () -> new FloralBlockItem(BlockInit.PEONY.get()));
+
+    public static final RegistryObject<FloralBlockItem> TEST_DANDELION = ITEMS.register("test_dandelion",
+            () -> new FloralBlockItem(Blocks.DANDELION));
 }
