@@ -18,7 +18,7 @@ public class FloralSMP {
     public static final String MODID = "floralsmp";
     public static final String MODNAME = "Floral SMP Mod";
     public static final String VERSION = "${version}";
-    private static final Logger LOGGER = LogUtils.getLogger();
+    public static final Logger LOGGER = LogUtils.getLogger();
 
     public static final FloralItemGroup floralItemGroup = new FloralItemGroup();
 
