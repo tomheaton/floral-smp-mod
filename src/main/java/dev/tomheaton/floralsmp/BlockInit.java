@@ -23,7 +23,7 @@ public class BlockInit {
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, FloralSMP.MODID);
 
     // TEST
-    public static final RegistryObject<FlowerBlock> EXAMPLE_FLOWER = register("example_flower",
+    public static final RegistryObject<FlowerBlock> EXAMPLE_FLOWER = register("test_flower",
             () -> new FlowerBlock(MobEffects.DIG_SPEED, 300, BlockBehaviour.Properties.copy(Blocks.DANDELION)),
             new Item.Properties().tab(FloralSMP.floralItemGroup));
 

@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "floralsmp:block/example_flower"
+    "layer0": "floralsmp:block/test_flower"
   }
 }

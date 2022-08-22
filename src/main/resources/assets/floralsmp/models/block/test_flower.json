@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cross",
   "textures": {
-    "cross": "floralsmp:block/example_flower"
+    "cross": "floralsmp:block/test_flower"
   }
 }
