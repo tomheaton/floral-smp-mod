@@ -3,6 +3,7 @@ package dev.tomheaton.floralsmp;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
@@ -27,18 +28,10 @@ public class ModEvents {
                 if (itemStack.isEmpty()) continue;
 
                 FloralSMP.LOGGER.info("item: " + itemStack.getItem());
-            }
 
-            if (player.getInventory().contains(new ItemStack(ItemInit.DANDELION.get()))) {
-//                FloralSMP.LOGGER.info(String.valueOf(player.getName()));
-                FloralSMP.LOGGER.info("DANDELION");
-//                event.player.sendSystemMessage(Component.literal("Server player tick with item"));
-            }
-
-            if (player.getInventory().contains(new ItemStack(Items.DANDELION))) {
-//                FloralSMP.LOGGER.info(String.valueOf(player.getName()));
-                FloralSMP.LOGGER.info("DANDELION CUSTOM");
-//                event.player.sendSystemMessage(Component.literal("Server player tick with item (official)"));
+                if (itemStack.is(ItemInit.DANDELION.get())) {
+                    FloralSMP.LOGGER.info("is instance of other flower");
+                }
             }
         }
     }
