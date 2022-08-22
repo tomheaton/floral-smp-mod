@@ -18,7 +18,6 @@ public class FloralItemModelProvider extends ItemModelProvider {
         ModelFile itemGenerated = getExistingFile(mcLoc("item/generated"));
 
         blockBuilder(itemGenerated, "dandelion");
-        blockBuilder(itemGenerated, "dandelion");
         blockBuilder(itemGenerated, "poppy");
         blockBuilder(itemGenerated, "blue_orchid");
         blockBuilder(itemGenerated, "allium");

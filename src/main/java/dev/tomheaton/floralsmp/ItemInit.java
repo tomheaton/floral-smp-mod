@@ -45,7 +45,7 @@ public class ItemInit {
         return TreeFeatures.HUGE_BROWN_MUSHROOM;
     }));
     public static final RegistryObject<Block> RED_MUSHROOM = ITEMS.register("red_mushroom", () -> new MushroomBlock(BlockBehaviour.Properties.of(Material.PLANT, MaterialColor.COLOR_RED).noCollission().randomTicks().instabreak().sound(SoundType.GRASS).hasPostProcess(Blocks::always), () -> {
-        return TreeFeatures.HUGE_RED_MUSHROOM;
+        return TreeFeatures.HUGE_RED_MUSHROOM;w
     }));*/
 
     public static final RegistryObject<FloralBlockItem> SUNFLOWER = ITEMS.register("sunflower",

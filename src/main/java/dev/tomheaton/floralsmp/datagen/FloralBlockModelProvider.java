@@ -16,9 +16,8 @@ public class FloralBlockModelProvider extends BlockModelProvider {
 
     @Override
     protected void registerModels() {
-        ModelFile itemGenerated = getExistingFile(mcLoc("item/generated"));
+        ModelFile itemGenerated = getExistingFile(mcLoc("block/cross"));
 
-        builder(itemGenerated, "dandelion");
         builder(itemGenerated, "dandelion");
         builder(itemGenerated, "poppy");
         builder(itemGenerated, "blue_orchid");
@@ -39,6 +38,6 @@ public class FloralBlockModelProvider extends BlockModelProvider {
     }
 
     private BlockModelBuilder builder(ModelFile itemGenerated, String name) {
-        return getBuilder(name).parent(itemGenerated).texture("layer0", "block/" + name);
+        return getBuilder(name).parent(itemGenerated).texture("cross", "block/" + name).renderType("cutout");
     }
 }
