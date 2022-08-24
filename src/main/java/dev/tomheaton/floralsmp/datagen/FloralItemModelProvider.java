@@ -30,10 +30,14 @@ public class FloralItemModelProvider extends ItemModelProvider {
         blockBuilder(itemGenerated, "cornflower");
         blockBuilder(itemGenerated, "lily_of_the_valley");
         blockBuilder(itemGenerated, "wither_rose");
-        blockBuilder(itemGenerated, "sunflower");
-        blockBuilder(itemGenerated, "lilac");
-        blockBuilder(itemGenerated, "rose_bush");
-        blockBuilder(itemGenerated, "peony");
+
+        blockBuilder(itemGenerated, "sunflower", "top");
+        blockBuilder(itemGenerated, "lilac", "top");
+        blockBuilder(itemGenerated, "rose_bush", "top");
+        blockBuilder(itemGenerated, "peony", "top");
+
+        blockBuilder(itemGenerated, "red_mushroom");
+        blockBuilder(itemGenerated, "brown_mushroom");
     }
 
     private ItemModelBuilder itemBuilder(ModelFile itemGenerated, String name) {
@@ -43,5 +47,9 @@ public class FloralItemModelProvider extends ItemModelProvider {
     // TODO: move this to block data gen?
     private ItemModelBuilder blockBuilder(ModelFile itemGenerated, String name) {
         return getBuilder(name).parent(itemGenerated).texture("layer0", "block/" + name);
+    }
+
+    private ItemModelBuilder blockBuilder(ModelFile itemGenerated, String name, String extra) {
+        return getBuilder(name).parent(itemGenerated).texture("layer0", "block/" + name + "_" + extra);
     }
 }

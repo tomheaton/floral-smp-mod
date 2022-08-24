@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "floralsmp:block/lilac"
+    "layer0": "floralsmp:block/lilac_top"
   }
 }

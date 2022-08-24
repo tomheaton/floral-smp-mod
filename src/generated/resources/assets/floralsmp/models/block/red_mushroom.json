@@ -2,6 +2,6 @@
   "parent": "minecraft:block/cross",
   "render_type": "minecraft:cutout",
   "textures": {
-    "cross": "floralsmp:block/sunflower"
+    "cross": "floralsmp:block/red_mushroom"
   }
 }

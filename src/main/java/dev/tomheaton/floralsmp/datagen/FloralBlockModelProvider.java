@@ -31,10 +31,14 @@ public class FloralBlockModelProvider extends BlockModelProvider {
         builder(itemGenerated, "cornflower");
         builder(itemGenerated, "lily_of_the_valley");
         builder(itemGenerated, "wither_rose");
-        builder(itemGenerated, "sunflower");
-        builder(itemGenerated, "lilac");
-        builder(itemGenerated, "rose_bush");
-        builder(itemGenerated, "peony");
+
+//        builder(itemGenerated, "sunflower");
+//        builder(itemGenerated, "lilac");
+//        builder(itemGenerated, "rose_bush");
+//        builder(itemGenerated, "peony");
+
+        builder(itemGenerated, "red_mushroom");
+        builder(itemGenerated, "brown_mushroom");
     }
 
     private BlockModelBuilder builder(ModelFile itemGenerated, String name) {

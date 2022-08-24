@@ -3,7 +3,6 @@ package dev.tomheaton.floralsmp.datagen;
 import dev.tomheaton.floralsmp.FloralSMP;
 import net.minecraft.data.DataGenerator;
 import net.minecraftforge.common.data.ExistingFileHelper;
-import net.minecraftforge.common.data.ForgeRecipeProvider;
 import net.minecraftforge.data.event.GatherDataEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
