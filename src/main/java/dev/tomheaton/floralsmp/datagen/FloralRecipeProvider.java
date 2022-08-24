@@ -30,6 +30,7 @@ public class FloralRecipeProvider extends RecipeProvider implements IConditionBu
         powerFlowerRecipe(ItemInit.WHITE_TULIP.get(), Items.WHITE_TULIP, consumer);
         powerFlowerRecipe(ItemInit.PINK_TULIP.get(), Items.PINK_TULIP, consumer);
         powerFlowerRecipe(ItemInit.OXEYE_DAISY.get(), Items.OXEYE_DAISY, consumer);
+        powerFlowerRecipe(ItemInit.CORNFLOWER.get(), Items.CORNFLOWER, consumer);
         powerFlowerRecipe(ItemInit.LILY_OF_THE_VALLEY.get(), Items.LILY_OF_THE_VALLEY, consumer);
         powerFlowerRecipe(ItemInit.WITHER_ROSE.get(), Items.WITHER_ROSE, consumer);
         powerFlowerRecipe(ItemInit.SUNFLOWER.get(), Items.SUNFLOWER, consumer);
