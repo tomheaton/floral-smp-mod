@@ -21,5 +21,8 @@
   "block.floralsmp.brown_mushroom": "Brown Mushroom (Power)",
   "block.floralsmp.red_mushroom": "Red Mushroom (Power)",
 
-  "itemGroup.floralsmp.main": "Floral SMP"
+  "itemGroup.floralsmp.main": "Floral SMP",
+
+  "tooltip.floralsmp.base": "Floral SMP Power Flower",
+  "tooltip.floralsmp.shift": "Press SHIFT for more info"
 }
