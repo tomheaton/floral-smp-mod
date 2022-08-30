@@ -50,4 +50,6 @@ public class BlockInit {
 
     public static final RegistryObject<Block> BROWN_MUSHROOM = BLOCKS.register("brown_mushroom", FloralBushBlock::new);
     public static final RegistryObject<Block> RED_MUSHROOM = BLOCKS.register("red_mushroom", FloralBushBlock::new);
+
+    // TODO: add cactus
 }

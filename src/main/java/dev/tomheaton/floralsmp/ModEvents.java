@@ -91,8 +91,13 @@ public class ModEvents {
                     player.addEffect(new MobEffectInstance(MobEffects.POISON, 200, 100, true, true));
                 }
                 if (itemStack.is(ItemInit.RED_MUSHROOM.get())) {
-                    player.addEffect(new MobEffectInstance(MobEffects.POISON, 200, 100, true, true));
+                    player.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 200, 100, true, true));
                 }
+                // TODO: add cactus
+                /*if (itemStack.is(ItemInit.CACTUS.get())) {
+                    player.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 200, 100, true, true));
+                    player.addEffect(new MobEffectInstance(MobEffects.HEALTH_BOOST, 200, 100, true, true));
+                }*/
             }
         }
     }
