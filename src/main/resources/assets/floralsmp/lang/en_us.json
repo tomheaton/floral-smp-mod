@@ -20,9 +20,31 @@
   "block.floralsmp.peony": "Peony (Power)",
   "block.floralsmp.brown_mushroom": "Brown Mushroom (Power)",
   "block.floralsmp.red_mushroom": "Red Mushroom (Power)",
+  "block.floralsmp.cactus": "Cactus (Power)",
 
   "itemGroup.floralsmp.main": "Floral SMP",
 
   "tooltip.floralsmp.base": "Floral SMP Power Flower",
-  "tooltip.floralsmp.shift": "Press SHIFT for more info"
+  "tooltip.floralsmp.shift": "Press SHIFT for more info",
+
+  "tooltip.floralsmp.dandelion": "none",
+  "tooltip.floralsmp.poppy": "Fire Immunity/Shoot Fireballs",
+  "tooltip.floralsmp.blue_orchid": "Water Breathing/Fast Swimming",
+  "tooltip.floralsmp.allium": "none",
+  "tooltip.floralsmp.azure_bluet": "none",
+  "tooltip.floralsmp.red_tulip": "none",
+  "tooltip.floralsmp.orange_tulip": "none",
+  "tooltip.floralsmp.white_tulip": "none",
+  "tooltip.floralsmp.pink_tulip": "none",
+  "tooltip.floralsmp.oxeye_daisy": "Healing/No Hunger",
+  "tooltip.floralsmp.cornflower": "Flight/No Fall Damage",
+  "tooltip.floralsmp.lily_of_the_valley": "Healing/No Hunger",
+  "tooltip.floralsmp.wither_rose": "everything fuck it op asf",
+  "tooltip.floralsmp.sunflower": "No Hostile Mobs/Change Time of Day",
+  "tooltip.floralsmp.lilac": "Invisibility/Walk through walls if possible",
+  "tooltip.floralsmp.rose_bush": "everything fuck it op asf",
+  "tooltip.floralsmp.peony": "none",
+  "tooltip.floralsmp.brown_mushroom": "Constant Haste/Speed",
+  "tooltip.floralsmp.red_mushroom": "Constant Haste/Speed",
+  "tooltip.floralsmp.cactus": "Strength (extra hearts)/constant Thorns"
 }

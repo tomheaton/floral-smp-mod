@@ -35,7 +35,7 @@ public class FloralBlockItem extends BlockItem {
         components.add(Component.translatable("tooltip.floralsmp.base").withStyle(ChatFormatting.AQUA));
 
         if (Screen.hasShiftDown()) {
-            components.add(Component.translatable("tooltip.floralsmp." + stack.getHoverName()).withStyle(ChatFormatting.WHITE));
+            components.add(Component.translatable("tooltip.floralsmp." + stack.getDescriptionId().split("\\.")[2]).withStyle(ChatFormatting.WHITE));
         } else {
             components.add(Component.translatable("tooltip.floralsmp.shift").withStyle(ChatFormatting.YELLOW));
         }
