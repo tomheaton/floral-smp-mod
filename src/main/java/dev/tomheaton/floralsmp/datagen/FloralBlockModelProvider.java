@@ -37,8 +37,8 @@ public class FloralBlockModelProvider extends BlockModelProvider {
 //        builder(itemGenerated, "rose_bush");
 //        builder(itemGenerated, "peony");
 
-        builder(itemGenerated, "red_mushroom");
         builder(itemGenerated, "brown_mushroom");
+        builder(itemGenerated, "red_mushroom");
     }
 
     private BlockModelBuilder builder(ModelFile itemGenerated, String name) {

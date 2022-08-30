@@ -38,13 +38,6 @@ public class ItemInit {
     public static final RegistryObject<FloralBlockItem> WITHER_ROSE = ITEMS.register("wither_rose",
             () -> new FloralBlockItem(BlockInit.WITHER_ROSE.get()));
 
-    /*public static final RegistryObject<Block> BROWN_MUSHROOM = ITEMS.register("brown_mushroom", () -> new MushroomBlock(BlockBehaviour.Properties.of(Material.PLANT, MaterialColor.COLOR_BROWN).noCollission().randomTicks().instabreak().sound(SoundType.GRASS).lightLevel((p_50892_) -> {
-        return 1;
-    }).hasPostProcess((a, b, c) -> (boolean)false), () -> {
-        return TreeFeatures.HUGE_BROWN_MUSHROOM;
-    }));
-    public static final RegistryObject<Block> RED_MUSHROOM = ITEMS.register("red_mushroom", () -> new MushroomBlock(BlockBehaviour.Properties.of(Material.PLANT, MaterialColor.COLOR_RED).noCollission().randomTicks().instabreak().sound(SoundType.GRASS);
-*/
     public static final RegistryObject<FloralBlockItem> SUNFLOWER = ITEMS.register("sunflower",
             () -> new FloralBlockItem(BlockInit.SUNFLOWER.get()));
     public static final RegistryObject<FloralBlockItem> LILAC = ITEMS.register("lilac",
@@ -53,4 +46,10 @@ public class ItemInit {
             () -> new FloralBlockItem(BlockInit.ROSE_BUSH.get()));
     public static final RegistryObject<FloralBlockItem> PEONY = ITEMS.register("peony",
             () -> new FloralBlockItem(BlockInit.PEONY.get()));
+
+    public static final RegistryObject<FloralBlockItem> BROWN_MUSHROOM = ITEMS.register("brown_mushroom",
+            () -> new FloralBlockItem(BlockInit.BROWN_MUSHROOM.get()));
+
+    public static final RegistryObject<FloralBlockItem> RED_MUSHROOM = ITEMS.register("red_mushroom",
+            () -> new FloralBlockItem(BlockInit.RED_MUSHROOM.get()));
 }

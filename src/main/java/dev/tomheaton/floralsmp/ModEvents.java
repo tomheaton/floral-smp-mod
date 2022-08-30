@@ -87,6 +87,12 @@ public class ModEvents {
                 if (itemStack.is(ItemInit.PEONY.get())) {
                     player.addEffect(new MobEffectInstance(MobEffects.POISON, 200, 100, true, true));
                 }
+                if (itemStack.is(ItemInit.BROWN_MUSHROOM.get())) {
+                    player.addEffect(new MobEffectInstance(MobEffects.POISON, 200, 100, true, true));
+                }
+                if (itemStack.is(ItemInit.RED_MUSHROOM.get())) {
+                    player.addEffect(new MobEffectInstance(MobEffects.POISON, 200, 100, true, true));
+                }
             }
         }
     }

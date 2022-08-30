@@ -27,9 +27,6 @@ public class BlockInit {
             () -> new FlowerBlock(MobEffects.DIG_SPEED, 300, BlockBehaviour.Properties.copy(Blocks.DANDELION)),
             new Item.Properties().tab(FloralSMP.floralItemGroup));
 
-    // EXAMPLE:
-//    public static final Block AZURE_BLUET = register("azure_bluet", new FloralFlowerBlock(MobEffects.BLINDNESS, 8, BlockBehaviour.Properties.of(Material.PLANT).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ)));
-
     public static final RegistryObject<Block> DANDELION = BLOCKS.register("dandelion", () -> new FloralFlowerBlock(MobEffects.SATURATION, 7));
     public static final RegistryObject<Block> POPPY = BLOCKS.register("poppy", () -> new FloralFlowerBlock(MobEffects.NIGHT_VISION, 5));
     public static final RegistryObject<Block> BLUE_ORCHID = BLOCKS.register("blue_orchid", () -> new FloralFlowerBlock(MobEffects.SATURATION, 7));
@@ -43,19 +40,14 @@ public class BlockInit {
     public static final RegistryObject<Block> CORNFLOWER = BLOCKS.register("cornflower", () -> new FloralFlowerBlock(MobEffects.JUMP, 6));
     public static final RegistryObject<Block> LILY_OF_THE_VALLEY = BLOCKS.register("lily_of_the_valley", () -> new FloralFlowerBlock(MobEffects.POISON, 12));
 
+    // TODO: custom flower block here?
     public static final RegistryObject<Block> WITHER_ROSE = BLOCKS.register("wither_rose", () -> new WitherRoseBlock(MobEffects.WITHER, BlockBehaviour.Properties.of(Material.PLANT).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ)));
-
-    /*public static final RegistryObject<Block> BROWN_MUSHROOM = BLOCKS.register("brown_mushroom", () -> new MushroomBlock(BlockBehaviour.Properties.of(Material.PLANT, MaterialColor.COLOR_BROWN).noCollission().randomTicks().instabreak().sound(SoundType.GRASS).lightLevel((p_50892_) -> {
-        return 1;
-    }).hasPostProcess(Blocks::always), () -> {
-        return TreeFeatures.HUGE_BROWN_MUSHROOM;
-    }));
-    public static final RegistryObject<Block> RED_MUSHROOM = BLOCKS.register("red_mushroom", () -> new MushroomBlock(BlockBehaviour.Properties.of(Material.PLANT, MaterialColor.COLOR_RED).noCollission().randomTicks().instabreak().sound(SoundType.GRASS).hasPostProcess(Blocks::always), () -> {
-        return TreeFeatures.HUGE_RED_MUSHROOM;
-    }));*/
 
     public static final RegistryObject<Block> SUNFLOWER = BLOCKS.register("sunflower", FloralTallFlowerBlock::new);
     public static final RegistryObject<Block> LILAC = BLOCKS.register("lilac", FloralTallFlowerBlock::new);
     public static final RegistryObject<Block> ROSE_BUSH = BLOCKS.register("rose_bush", FloralTallFlowerBlock::new);
     public static final RegistryObject<Block> PEONY = BLOCKS.register("peony", FloralTallFlowerBlock::new);
+
+    public static final RegistryObject<Block> BROWN_MUSHROOM = BLOCKS.register("brown_mushroom", FloralBushBlock::new);
+    public static final RegistryObject<Block> RED_MUSHROOM = BLOCKS.register("red_mushroom", FloralBushBlock::new);
 }
