@@ -1,16 +1,14 @@
 modLoader="javafml"
 loaderVersion="[42,)"
 license="MIT"
-# TODO: this
-#issueTrackerURL="https://change.me.to.your.issue.tracker.example.invalid/" #optional
+issueTrackerURL="https://github.com/tomheaton/floral-smp-mod/issues/"
 
 [[mods]]
 modId="floralsmp"
 version="${file.jarVersion}"
-displayName="Floral SMP"
-# TODO: these
-#updateJSONURL="https://change.me.example.invalid/updates.json"
-#displayURL="https://change.me.to.your.mods.homepage.example.invalid/"
+displayName="Floral SMP Mod"
+updateJSONURL="https://raw.githubusercontent.com/tomheaton/floral-smp-mod/master/update.json"
+displayURL="https://github.com/tomheaton/floral-smp-mod"
 logoFile="floralsmp.png"
 credits="Floral SMP for the mod idea <3"
 authors="tomheaton"
