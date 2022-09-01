@@ -41,6 +41,7 @@ public class FloralBlockModelProvider extends BlockModelProvider {
         builder(itemGenerated, "red_mushroom");
 
         // TODO: add cactus
+//        builder(itemGenerated, "cactus");
     }
 
     private BlockModelBuilder builder(ModelFile itemGenerated, String name) {
