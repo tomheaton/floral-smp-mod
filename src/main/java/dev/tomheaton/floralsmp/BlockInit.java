@@ -52,4 +52,5 @@ public class BlockInit {
     public static final RegistryObject<Block> RED_MUSHROOM = BLOCKS.register("red_mushroom", FloralBushBlock::new);
 
     // TODO: add cactus
+    public static final RegistryObject<Block> CACTUS = BLOCKS.register("cactus", () -> new CactusBlock(BlockBehaviour.Properties.of(Material.CACTUS).randomTicks().strength(0.4F).sound(SoundType.WOOL)));
 }
