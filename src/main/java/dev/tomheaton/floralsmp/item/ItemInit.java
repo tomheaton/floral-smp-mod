@@ -1,6 +1,8 @@
 
-package dev.tomheaton.floralsmp;
+package dev.tomheaton.floralsmp.item;
 
+import dev.tomheaton.floralsmp.block.BlockInit;
+import dev.tomheaton.floralsmp.FloralSMP;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;

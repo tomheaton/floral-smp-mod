@@ -1,5 +1,7 @@
-package dev.tomheaton.floralsmp;
+package dev.tomheaton.floralsmp.block;
 
+import dev.tomheaton.floralsmp.FloralSMP;
+import dev.tomheaton.floralsmp.item.ItemInit;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;

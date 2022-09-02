@@ -1,4 +1,4 @@
-package dev.tomheaton.floralsmp;
+package dev.tomheaton.floralsmp.block;
 
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.TallFlowerBlock;

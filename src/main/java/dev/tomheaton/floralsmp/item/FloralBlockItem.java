@@ -1,5 +1,6 @@
-package dev.tomheaton.floralsmp;
+package dev.tomheaton.floralsmp.item;
 
+import dev.tomheaton.floralsmp.FloralSMP;
 import net.minecraft.ChatFormatting;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.network.chat.Component;

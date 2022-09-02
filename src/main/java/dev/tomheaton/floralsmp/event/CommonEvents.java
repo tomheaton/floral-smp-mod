@@ -1,5 +1,6 @@
-package dev.tomheaton.floralsmp;
+package dev.tomheaton.floralsmp.event;
 
+import dev.tomheaton.floralsmp.FloralSMP;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;

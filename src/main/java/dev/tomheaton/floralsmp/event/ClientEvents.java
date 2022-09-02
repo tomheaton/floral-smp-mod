@@ -1,5 +1,7 @@
-package dev.tomheaton.floralsmp;
+package dev.tomheaton.floralsmp.event;
 
+import dev.tomheaton.floralsmp.block.BlockInit;
+import dev.tomheaton.floralsmp.FloralSMP;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraftforge.api.distmarker.Dist;

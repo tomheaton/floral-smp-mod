@@ -1,5 +1,7 @@
-package dev.tomheaton.floralsmp;
+package dev.tomheaton.floralsmp.event;
 
+import dev.tomheaton.floralsmp.FloralSMP;
+import dev.tomheaton.floralsmp.item.ItemInit;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.player.Inventory;

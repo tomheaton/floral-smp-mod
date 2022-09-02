@@ -1,6 +1,6 @@
 package dev.tomheaton.floralsmp.datagen;
 
-import dev.tomheaton.floralsmp.ItemInit;
+import dev.tomheaton.floralsmp.item.ItemInit;
 import net.minecraft.advancements.critereon.ItemPredicate;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.recipes.FinishedRecipe;

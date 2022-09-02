@@ -1,5 +1,6 @@
-package dev.tomheaton.floralsmp;
+package dev.tomheaton.floralsmp.item;
 
+import dev.tomheaton.floralsmp.FloralSMP;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;

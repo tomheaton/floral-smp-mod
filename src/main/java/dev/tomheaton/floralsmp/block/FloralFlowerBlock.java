@@ -1,4 +1,4 @@
-package dev.tomheaton.floralsmp;
+package dev.tomheaton.floralsmp.block;
 
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffects;
