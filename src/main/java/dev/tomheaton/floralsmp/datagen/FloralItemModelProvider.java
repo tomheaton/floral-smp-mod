@@ -39,7 +39,6 @@ public class FloralItemModelProvider extends ItemModelProvider {
         blockBuilder(itemGenerated, "brown_mushroom");
         blockBuilder(itemGenerated, "red_mushroom");
 
-        // TODO: add cactus
 //        blockBuilder(itemGenerated, "cactus");
     }
 

@@ -18,11 +18,11 @@ public class BaseFlowerBlock extends FlowerBlock {
 
     public BaseFlowerBlock() {
         super(MobEffects.BLINDNESS, 8, BlockBehaviour.Properties
-                        .of(Material.PLANT)
-                        .noCollission()
-                        .instabreak()
-                        .sound(SoundType.GRASS)
-                        .offsetType(BlockBehaviour.OffsetType.XZ)
+                .of(Material.PLANT)
+                .noCollission()
+                .instabreak()
+                .sound(SoundType.GRASS)
+                .offsetType(BlockBehaviour.OffsetType.XZ)
         );
     }
 

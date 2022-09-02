@@ -1,6 +1,5 @@
 {
   "block.floralsmp.test_flower": "Test Flower (Power)",
-
   "block.floralsmp.dandelion": "Dandelion (Power)",
   "block.floralsmp.poppy": "Poppy (Power)",
   "block.floralsmp.blue_orchid": "Blue Orchid (Power)",
@@ -21,12 +20,9 @@
   "block.floralsmp.brown_mushroom": "Brown Mushroom (Power)",
   "block.floralsmp.red_mushroom": "Red Mushroom (Power)",
   "block.floralsmp.cactus": "Cactus (Power)",
-
   "itemGroup.floralsmp.main": "Floral SMP",
-
   "tooltip.floralsmp.base": "Floral SMP Power Flower",
   "tooltip.floralsmp.shift": "Press SHIFT for more info",
-
   "tooltip.floralsmp.dandelion": "none",
   "tooltip.floralsmp.poppy": "Fire Immunity/Shoot Fireballs",
   "tooltip.floralsmp.blue_orchid": "Water Breathing/Fast Swimming",

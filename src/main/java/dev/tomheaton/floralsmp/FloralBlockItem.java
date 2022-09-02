@@ -4,10 +4,7 @@ import net.minecraft.ChatFormatting;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.InteractionResult;
-import net.minecraft.world.item.BlockItem;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.TooltipFlag;
+import net.minecraft.world.item.*;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
@@ -41,5 +38,10 @@ public class FloralBlockItem extends BlockItem {
         }
 
         super.appendHoverText(stack, level, components, flag);
+    }
+
+    @Override
+    public Rarity getRarity(ItemStack itemStack) {
+        return Rarity.EPIC;
     }
 }

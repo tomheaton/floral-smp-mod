@@ -24,11 +24,11 @@ public class FloralFlowerBlock extends FlowerBlock {
 
     public FloralFlowerBlock() {
         super(MobEffects.BLINDNESS, 8, Properties
-                        .of(Material.PLANT)
-                        .noCollission()
-                        .instabreak()
-                        .sound(SoundType.GRASS)
-                        .offsetType(OffsetType.XZ)
+                .of(Material.PLANT)
+                .noCollission()
+                .instabreak()
+                .sound(SoundType.GRASS)
+                .offsetType(OffsetType.XZ)
         );
     }
 }

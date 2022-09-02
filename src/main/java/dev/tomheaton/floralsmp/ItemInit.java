@@ -53,7 +53,6 @@ public class ItemInit {
     public static final RegistryObject<FloralBlockItem> RED_MUSHROOM = ITEMS.register("red_mushroom",
             () -> new FloralBlockItem(BlockInit.RED_MUSHROOM.get()));
 
-    // TODO: add cactus
     public static final RegistryObject<FloralBlockItem> CACTUS = ITEMS.register("cactus",
             () -> new FloralBlockItem(BlockInit.CACTUS.get()));
 }
