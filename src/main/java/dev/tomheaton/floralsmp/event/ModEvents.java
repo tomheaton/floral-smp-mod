@@ -26,13 +26,10 @@ public class ModEvents {
                 ItemStack itemStack = inventory.items.get(i);
                 if (itemStack.isEmpty()) continue;
 
-                FloralSMP.LOGGER.info("item: " + itemStack.getItem());
-
                 // TODO: create custom base item and check if player has item of instance of that
                 // then add method to item to get the effect needed, so that we can loop here and apply dynamically
 
                 if (itemStack.is(ItemInit.DANDELION.get())) {
-                    player.addEffect(new MobEffectInstance(MobEffects.POISON, 200, 100, true, true));
                 }
                 if (itemStack.is(ItemInit.POPPY.get())) {
                     player.addEffect(new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 200, 100, true, true));
@@ -42,22 +39,16 @@ public class ModEvents {
                     player.addEffect(new MobEffectInstance(MobEffects.DOLPHINS_GRACE, 200, 100, true, true));
                 }
                 if (itemStack.is(ItemInit.ALLIUM.get())) {
-                    player.addEffect(new MobEffectInstance(MobEffects.POISON, 200, 100, true, true));
                 }
                 if (itemStack.is(ItemInit.AZURE_BLUET.get())) {
-                    player.addEffect(new MobEffectInstance(MobEffects.POISON, 200, 100, true, true));
                 }
                 if (itemStack.is(ItemInit.RED_TULIP.get())) {
-                    player.addEffect(new MobEffectInstance(MobEffects.POISON, 200, 100, true, true));
                 }
                 if (itemStack.is(ItemInit.ORANGE_TULIP.get())) {
-                    player.addEffect(new MobEffectInstance(MobEffects.POISON, 200, 100, true, true));
                 }
                 if (itemStack.is(ItemInit.WHITE_TULIP.get())) {
-                    player.addEffect(new MobEffectInstance(MobEffects.POISON, 200, 100, true, true));
                 }
                 if (itemStack.is(ItemInit.PINK_TULIP.get())) {
-                    player.addEffect(new MobEffectInstance(MobEffects.POISON, 200, 100, true, true));
                 }
                 if (itemStack.is(ItemInit.OXEYE_DAISY.get())) {
                     player.addEffect(new MobEffectInstance(MobEffects.NIGHT_VISION, 200, 100, true, true));
@@ -77,7 +68,6 @@ public class ModEvents {
                     player.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 200, 100, true, true));
                 }
                 if (itemStack.is(ItemInit.SUNFLOWER.get())) {
-                    player.addEffect(new MobEffectInstance(MobEffects.POISON, 200, 100, true, true));
                 }
                 if (itemStack.is(ItemInit.LILAC.get())) {
                     player.addEffect(new MobEffectInstance(MobEffects.INVISIBILITY, 200, 100, true, true));
@@ -87,10 +77,8 @@ public class ModEvents {
                     player.addEffect(new MobEffectInstance(MobEffects.SLOW_FALLING, 200, 100, true, true));
                 }
                 if (itemStack.is(ItemInit.PEONY.get())) {
-                    player.addEffect(new MobEffectInstance(MobEffects.POISON, 200, 100, true, true));
                 }
                 if (itemStack.is(ItemInit.BROWN_MUSHROOM.get())) {
-                    player.addEffect(new MobEffectInstance(MobEffects.POISON, 200, 100, true, true));
                 }
                 if (itemStack.is(ItemInit.RED_MUSHROOM.get())) {
                     player.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 200, 100, true, true));

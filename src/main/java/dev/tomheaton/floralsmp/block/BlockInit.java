@@ -1,33 +1,20 @@
 package dev.tomheaton.floralsmp.block;
 
 import dev.tomheaton.floralsmp.FloralSMP;
-import dev.tomheaton.floralsmp.item.ItemInit;
 import net.minecraft.world.effect.MobEffects;
-import net.minecraft.world.item.BlockItem;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.*;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.CactusBlock;
+import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.WitherRoseBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
-import java.util.function.Supplier;
-
 public class BlockInit {
 
-    private static <T extends Block> RegistryObject<T> register(String name, Supplier<T> supplier, Item.Properties properties) {
-        RegistryObject<T> block = BLOCKS.register(name, supplier);
-        ItemInit.ITEMS.register(name, () -> new BlockItem(block.get(), properties));
-        return block;
-    }
-
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, FloralSMP.MODID);
-
-    // TEST
-    public static final RegistryObject<FlowerBlock> EXAMPLE_FLOWER = register("test_flower",
-            () -> new FlowerBlock(MobEffects.DIG_SPEED, 300, BlockBehaviour.Properties.copy(Blocks.DANDELION)),
-            new Item.Properties().tab(FloralSMP.floralItemGroup));
 
     public static final RegistryObject<Block> DANDELION = BLOCKS.register("dandelion", () -> new FloralFlowerBlock(MobEffects.SATURATION, 7));
     public static final RegistryObject<Block> POPPY = BLOCKS.register("poppy", () -> new FloralFlowerBlock(MobEffects.NIGHT_VISION, 5));
